@@ -79,7 +79,7 @@ const { } = new class {
       const x_end = innerWidth / 2 + Math.cos(radians * i + this.hueShifting) * (radius + barHeight);
       const y_end = innerHeight / 2 + Math.sin(radians * i + this.hueShifting) * (radius + barHeight);
        
-      this.ctx.strokeStyle = strokeStyle;
+      this.ctx.strokeStyle = `hsl(${i * 3.6}, 100%, 50%)`;
 
       this.ctx.lineWidth = 3;
       this.ctx.beginPath();
