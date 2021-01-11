@@ -90,6 +90,10 @@ const { } = new class {
     
     this.hueShifting += .01;
 
+    if (this.hueShifting > 360) {
+      this.hueShifting = 0;
+    }
+
     requestAnimationFrame(this.#renderFrame);
   }
 }
